@@ -1,0 +1,8 @@
+mkdir -p build
+cd build
+
+cmake -G "Ninja" \
+   -DCMAKE_PREFIX_PATH=/z/cs_lib/cmake/copperspice  \
+   -DCMAKE_BUILD_TYPE=Release        \
+   -DCMAKE_INSTALL_PREFIX=../deploy  \
+   ..
